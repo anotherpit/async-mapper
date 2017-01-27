@@ -1,0 +1,39 @@
+{
+  "name": "async-mapper",
+  "version": "0.0.0",
+  "description": "Asynchronously map any JS value to another JS value",
+  "main": "lib/async-mapper.node.js",
+  "browser": "lib/async-mapper.web.js",
+  "private": true,
+  "author": "anotherpit <anotherpit@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "(WEBPACK_ENV=node webpack) && (WEBPACK_ENV=web webpack)",
+    "test": "istanbul cover --report none --print both _mocha -- --compilers js:babel-register test/**/*.spec.js",
+    "lint": "eslint src test"
+  },
+  "keywords": [
+    "async",
+    "convert",
+    "json",
+    "map",
+    "mapper"
+  ],
+  "devDependencies": {
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "eslint": "^3.14.1",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^3.2.0",
+    "pre-commit": "^1.2.2",
+    "webpack": "^1.14.0"
+  },
+  "pre-commit": {
+    "silent": true,
+    "run": [
+      "lint",
+      "test"
+    ]
+  }
+}
