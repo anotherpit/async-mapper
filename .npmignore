@@ -4,6 +4,7 @@ coverage
 .eslintrc
 .idea/
 node_modules
+npm-debug.log
 src
 test
 webpack.config.js

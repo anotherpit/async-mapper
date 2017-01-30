@@ -1,10 +1,9 @@
 {
   "name": "async-mapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Asynchronously map any JS value to another JS value",
   "main": "lib/async-mapper.node.js",
   "browser": "lib/async-mapper.web.js",
-  "private": true,
   "author": "anotherpit <anotherpit@gmail.com>",
   "license": "MIT",
   "scripts": {
