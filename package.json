@@ -1,6 +1,6 @@
 {
   "name": "async-mapper",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Asynchronously map any JS value to another JS value",
   "main": "lib/async-mapper.node.js",
   "browser": "lib/async-mapper.web.js",
