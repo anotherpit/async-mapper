@@ -76,7 +76,7 @@ assert.deepStrictEqual(result, {
     sequenceOfRules: 'JOHN DOE8',
     mapOfRules: {
         lower: 'john doe',
-        upper: 'JOHN DOE
+        upper: 'JOHN DOE'
     }
 });
 
