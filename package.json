@@ -10,7 +10,8 @@
   "scripts": {
     "start": "(WEBPACK_ENV=node webpack) && (WEBPACK_ENV=web webpack)",
     "test": "istanbul cover --print both _mocha -- --compilers js:babel-register test/**/*.spec.js",
-    "lint": "eslint src test"
+    "lint": "eslint src test",
+    "prepublish": "npm run lint && npm test && npm start"
   },
   "keywords": [
     "async",
