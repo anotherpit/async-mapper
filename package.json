@@ -1,11 +1,13 @@
 {
   "name": "async-mapper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Asynchronously map any JS value to another JS value",
   "main": "lib/async-mapper.node.js",
   "browser": "lib/async-mapper.web.js",
   "author": "anotherpit <anotherpit@gmail.com>",
   "license": "MIT",
+  "repository": "anotherpit/async-mapper",
+  "bugs": "https://github.com/anotherpit/async-mapper/issues",
   "scripts": {
     "start": "(WEBPACK_ENV=node webpack) && (WEBPACK_ENV=web webpack)",
     "test": "istanbul cover --print both _mocha -- --compilers js:babel-register test/**/*.spec.js",
